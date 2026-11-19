@@ -1,32 +1,12 @@
 {
-  "name": "z-editz",
+  "name": "z-editz-workspace",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "Z-editz: Offline-first professional non-linear video editor",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.3.5",
-    "canvas-confetti": "^1.9.4",
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.75.0",
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1",
-    "tailwind-merge": "^3.7.0",
-    "tailwindcss": "^4.3.5",
-    "wavesurfer.js": "^8.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^24.19.2",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "oxlint": "^1.90.0",
-    "typescript": "~7.0.2",
-    "vite": "^8.3.6"
+    "dev": "npm --prefix z-editz run dev",
+    "build": "npm --prefix z-editz run build",
+    "preview": "npm --prefix z-editz run preview",
+    "lint": "npm --prefix z-editz run lint"
   }
 }

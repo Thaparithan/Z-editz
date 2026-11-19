@@ -1,0 +1,6 @@
+{
+  "name": "Z-editz",
+  "description": "Offline-first professional non-linear video editor with multi-track timeline, real-time compositing, color scopes, audio mixing, keyframes, and video export.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

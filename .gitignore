@@ -1,24 +1,27 @@
-# Logs
-logs
+# Dependencies
+node_modules/
+z-editz/node_modules/
+z-editz/bun.lock
+
+# Build outputs
+z-editz/dist/
+z-editz/dist-electron/
+dist/
+
+# Android build & cache
+.gradle/
+z-editz/android/.gradle/
+z-editz/android/build/
+z-editz/android/app/build/
+z-editz/android/capacitor-cordova-android-plugins/build/
+
+# Ignore large binary unpacked Windows build to respect GitHub's 100MB limit
+dist-installers/windows/
+dist-installers/*.zip
+
+# Environment & local secrets
+.env
+.env.local
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db

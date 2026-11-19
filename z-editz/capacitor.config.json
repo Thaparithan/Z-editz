@@ -1,0 +1,8 @@
+{
+  "appId": "com.zynor.zeditz",
+  "appName": "Z-editz",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
