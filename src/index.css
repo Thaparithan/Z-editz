@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #ffffff;
+    --bg-surface: #f8f6fc;
+    --bg-card: #f1edfa;
+    --border-color: #e4dcf5;
+    --text-primary: #151124;
+    --text-secondary: #6c6384;
+    --accent-purple: #7c3aed;
+    --accent-purple-glow: rgba(124, 58, 237, 0.25);
+    --accent-neon-cyan: #0284c7;
+    --accent-neon-pink: #db2777;
+    --timeline-track: #eae4f7;
+    --timeline-playhead: #7c3aed;
+  }
+
+  .dark {
+    --bg-main: #07050d;
+    --bg-surface: #0f0a1c;
+    --bg-card: #17112a;
+    --border-color: #271c42;
+    --text-primary: #f5f3ff;
+    --text-secondary: #9d92b8;
+    --accent-purple: #a855f7;
+    --accent-purple-glow: rgba(168, 85, 247, 0.45);
+    --accent-neon-cyan: #06b6d4;
+    --accent-neon-pink: #f43f5e;
+    --timeline-track: #140d25;
+    --timeline-playhead: #a855f7;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
+}
+
+/* Neon Glow utilities */
+.glow-purple {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4), 0 0 30px rgba(6, 182, 212, 0.2);
+}
+
+.glow-pink {
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.4), 0 0 30px rgba(244, 63, 94, 0.2);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(6, 182, 212, 0.6);
+}
+
+/* Timeline Custom Styling */
+.timeline-grid {
+  background-size: 20px 100%;
+  background-image: linear-gradient(to right, rgba(168, 85, 247, 0.08) 1px, transparent 1px);
+}
